@@ -5,6 +5,21 @@ CREATE TABLE mechanic(
 	last_name VARCHAR(100)
 );
 
+CREATE TABLE salesperson(
+	salesperson_id SERIAL PRIMARY KEY,
+	first_name VARCHAR(100),
+	last_name VARCHAR(100)
+	
+);
+--Creating Customers table
+CREATE TABLE customers(
+	customer_id SERIAL PRIMARY KEY,
+	first_name VARCHAR(150),
+	last_name VARCHAR(150),
+	address VARCHAR(150),
+	email VARCHAR(150),
+	billing_info VARCHAR(30)
+);
 
 --Creating Cars table
 CREATE TABLE cars(
